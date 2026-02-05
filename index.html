@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use – Talking Clock & Alarm App</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.5; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; border-bottom: 2px solid #1976d2; padding-bottom: 8px; }
+    h2 { font-size: 1.25rem; margin-top: 28px; color: #1976d2; }
+    h3 { font-size: 1.05rem; margin-top: 18px; color: #333; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li { margin: 4px 0; }
+    .feature { background: #f5f5f5; padding: 12px 16px; border-radius: 8px; margin: 12px 0; }
+    .setting-row { margin: 10px 0; padding: 8px 0; border-bottom: 1px solid #eee; }
+    .setting-name { font-weight: 600; }
+    .setting-desc { font-size: 0.9rem; color: #555; margin-top: 2px; }
+    .affects { font-size: 0.85rem; color: #1976d2; margin-top: 4px; }
+    nav { margin-bottom: 24px; }
+    nav a { margin-right: 12px; color: #1976d2; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .tabs { background: #e3f2fd; padding: 12px 16px; border-radius: 8px; margin: 12px 0; }
+    .tabs strong { display: block; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <h1>How to Use – Talking Clock & Alarm App</h1>
+  <p>This guide explains how to use each tab and how Settings affect the app.</p>
+
+  
+
+  <nav>
+    <a href="#clock">Clock</a>
+    <a href="#alarms">Alarms</a>
+    <a href="#focus">Focus</a>
+    <a href="#water">Water</a>
+    <a href="#health">Health (Medication)</a>
+    <a href="#yoga">Yoga</a>
+    <a href="#settings">Settings</a>
+  </nav>
+
+  <!-- CLOCK (Talking Clock) -->
+  <h2 id="clock">Clock – Talking Clock</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Current time, a Start/Stop Talking Clock Service Slider button for the Talking Clock service, and (when the service is running) a Settings card with announcement and quiet-hours options.</p>
+    <h3>How to turn on</h3>
+    <ul>
+      <li>Open the <strong>Clock</strong> tab with <strong>Show Seconds</strong> – Toggle to include seconds in the on-screen time (e.g. 14:32:05).</li>
+      <li>Tap the Talking Clock Service Slider to <strong>Start Talking Clock</strong>. The service starts and will announce the time at the interval you set.</li>
+    </ul>
+    <h3>How to edit (when service is running)</h3>
+    <ul>
+      
+      <li><strong>Announcement Interval</strong> – Dropdown: how often the clock speaks (e.g. 1 min, 5 min, 15 min, 1 hr, 2 hrs). Default is every 60 minutes.</li>
+      <li><strong>Quiet Hours Interval 1</strong> – Start and End time (time picker + slider). During this range the clock does <em>not</em> announce (e.g. 22:00–07:00 for night). Always active.</li>
+      <li><strong>Quiet Hours Interval 2</strong> – Toggle on to use a second quiet window (e.g. lunch 12:00–13:00). Same Start/End time pickers and sliders.</li>
+    </ul>
+    <p><strong>Note:</strong> Changes apply immediately while the Talking Clock service is running.</p>
+  </div>
+
+  <!-- ALARMS -->
+  <h2 id="alarms">Alarm – Alarms</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Title &quot;Alarms&quot;, a + button to add an alarm, and a list of your alarms. When an alarm is ringing, a dismiss card appears at the top.</p>
+    <h3>How to add</h3>
+    <ul>
+      <li>Open the <strong>Alarm</strong> tab.</li>
+      <li>Tap the <strong>+</strong> (FAB) button.</li>
+      <li>In the dialog: set <strong>Alarm Details </strong>, optional <strong>Message</strong>, and <strong>Talking Alarm</strong> enable/disable Slider button. Tap <strong>Add Alarm</strong>.</li>
+	<li> A <strong> Repeat ON</strong> slider button to add recurring days if it is a recurring alarm </li>
+    </ul>
+    <h3>How to edit</h3>
+    <ul>
+      <li>Tap the <strong>Edit</strong> (pencil) icon on an alarm.</li>
+      <li>Change time, Message, enabled state, or Repeat ON/ Days of the week, then save.</li>
+    </ul>
+    <p>Alarms use the system alarm; they can fire even when the app is closed (subject to system/battery rules).</p>
+  </div>
+
+  <!-- FOCUS TIMER -->
+  <h2 id="focus">Focus – Focus Timers</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Title &quot;Focus Timers&quot;, &quot;My Timers&quot; with a + button, an active timer card (when one is running) with progress and work/break phase, and a list of your saved timers.</p>
+    <h3>How to add</h3>
+    <ul>
+      <li>Open the <strong>Focus</strong> tab.</li>
+      <li>Tap the <strong>+</strong> button next to &quot;My Timers&quot;.</li>
+      <li>In the dialog: set <strong>work duration</strong>, <strong>break duration</strong>, and <strong>cycles</strong>. Name the timer if you want. Tap <strong>Add</strong>.</li>
+    </ul>
+    <h3>How to edit</h3>
+    <ul>
+      <li>Tap <strong>Edit</strong> on a timer in the list to change work/break/cycles or name.</li>
+    </ul>
+    <p>Start a timer from the list to see the running screen with progress. You can pause, resume, or stop. At the end of work/break phases you get a notification (respects Settings).</p>
+  </div>
+
+  <!-- WATER REMINDER -->
+  <h2 id="water">Water – Water Reminder</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Title &quot;Water Reminder&quot;. If no reminder exists: empty state with &quot;Add Water Reminder&quot;. If one exists: a card with countdown, progress bar, toggle, edit, and delete.</p>
+    <h3>How to add</h3>
+    <ul>
+      <li>Open the <strong>Water</strong> tab.</li>
+      <li>If none exists: tap <strong>Add Water Reminder</strong>.</li>
+      <li>In the dialog: set <strong>interval</strong> (minutes, e.g. 15 or 60), optional <strong>start time</strong> and <strong>end time</strong> (e.g. 09:00–21:00), and <strong>message</strong>. You can enable <strong>Speak message</strong> (TTS). Tap to save.</li>
+    </ul>
+    <h3>How to edit</h3>
+    <ul>
+      <li>On the water card, tap <strong>Edit</strong>. Change interval, time range, message, or &quot;Speak message&quot;, then save.</li>
+    </ul>
+    <p>Only one water reminder is used. The countdown and next notification are driven by WorkManager so they keep working after device is idle.</p>
+  </div>
+
+  <!-- HEALTH (Medication) -->
+  <h2 id="health">Health – Medication Reminders</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Title &quot;Medication Reminders&quot;, &quot;My Medications&quot; with a + button. Either an empty state or a list of medication reminders with toggle, edit, and delete.</p>
+    <h3>How to add</h3>
+    <ul>
+      <li>Open the <strong>Health</strong> tab.</li>
+      <li>Tap the <strong>+</strong> button.</li>
+      <li>In the dialog: set <strong>name</strong>, <strong>dosage</strong> , <strong>message</strong> with enable <strong>Speak message</strong> if you want TTS, <strong>Reminder Alarm Time</strong>  (e.g. 08:00, 20:00), and  <strong>repeat days</strong>. Tap to save.</li>
+	<li> </li>
+
+    </ul> 
+    <h3>How to edit</h3>
+    <ul>
+      <li>Tap <strong>Edit</strong> on a medication reminder to change any of the above.</li>
+    </ul>
+  </div>
+
+  <!-- YOGA TIMER -->
+  <h2 id="yoga">Yoga – Yoga Timers</h2>
+  <div class="feature">
+    <h3>What you see</h3>
+    <p>Title &quot;Yoga Timers&quot;, &quot;My Yoga Timers&quot; with a + button. When a timer is running: active timer card with time left, current pose, progress, pause/resume/stop. Below: list of saved yoga timers.</p>
+    <h3>How to add</h3>
+    <ul>
+      <li>Open the <strong>Yoga</strong> tab.</li>
+      <li>Tap the <strong>+</strong> button.</li>
+      <li>In the dialog: set <strong>number of poses</strong>, <strong>interval</strong> (seconds between poses), and optional <strong>name</strong>. Tap to save.</li>
+    </ul>
+    <h3>How to edit</h3>
+    <ul>
+      <li>Tap <strong>Edit</strong> on a yoga timer in the list to change poses, interval, or name.</li>
+    </ul>
+    <p>Tap <strong>Start</strong> on a timer to run it. The app shows progress and rings a bell at each pose interval. You can pause or stop.</p>
+  </div>
+
+  <!-- SETTINGS -->
+  <h2 id="settings">Settings</h2>
+  <p>Open the <strong>Settings</strong> tab (gear icon in the bottom bar) to see app-wide options and About.</p>
+
+  <h3>App Settings</h3>
+  <p>Each option affects which features can make sound, vibrate, or show notifications.</p>
+
+  <div class="setting-row">
+    <div class="setting-name">Notifications</div>
+    <div class="setting-desc">Enable or disable push notifications.</div>
+    <div class="affects">Affects: Water reminder, Medication reminders, Focus timer phase notifications. When off, no reminder/phase notifications are shown.</div>
+  </div>
+
+  <div class="setting-row">
+    <div class="setting-name">Sound</div>
+    <div class="setting-desc">Enable or disable sounds for alarms and reminders.</div>
+    <div class="affects">Affects: Talking Clock,  Alarm sound, Focus timer phase alerts, Water/Medication reminder notification sound, Yoga bell, notification channel sounds. When off, notifications and alarms may be silent (or vibration-only if Vibration is on).</div>
+  </div>
+
+  <div class="setting-row">
+    <div class="setting-name">Vibration</div>
+    <div class="setting-desc">Enable or disable vibration for alarms and reminders.</div>
+    <div class="affects">Affects: Alarm vibration, Focus timer phase vibration, Water/Medication reminder notification vibration. When off, only sound (if Sound is on) is used.</div>
+  </div>
+
+  <div class="setting-row">
+    <div class="setting-name">Dark Mode</div>
+    <div class="setting-desc">Switch the app to a dark theme.</div>
+    <div class="affects">Affects: Entire app UI (all tabs and screens). No effect on alarms or reminder behavior.</div>
+  </div>
+
+  <h3>About</h3>
+  <p>App Version (1.0.0), Privacy Policy, and Contact Support links.</p>
+
+  
+
+  <p style="margin-top: 32px; font-size: 0.9rem; color: #666;">Talking Clock &amp; Alarm App – How-to guide</p>
+</body>
+</html>
